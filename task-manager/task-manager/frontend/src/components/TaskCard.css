@@ -1,0 +1,97 @@
+.task-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-left: 4px solid #4a90e2;
+  transition: all 0.2s;
+}
+
+/* Completed task looks different */
+.task-card.completed {
+  border-left-color: #27ae60;
+  opacity: 0.75;
+}
+
+.task-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  cursor: pointer;
+  accent-color: #27ae60;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-title {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* Strike through title when completed */
+.task-card.completed .task-title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-description {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.task-date {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.task-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+/* Status badge */
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.badge-pending {
+  background-color: #fff3e0;
+  color: #e67e22;
+}
+
+.badge-done {
+  background-color: #e8f8f0;
+  color: #27ae60;
+}
+
+.btn-delete {
+  background: none;
+  padding: 4px 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #ffe0e0;
+}

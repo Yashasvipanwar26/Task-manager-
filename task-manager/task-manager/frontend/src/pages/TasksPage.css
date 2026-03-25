@@ -1,0 +1,101 @@
+.tasks-page {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4a90e2;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-title {
+  font-size: 22px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-user {
+  font-size: 14px;
+}
+
+.btn-logout {
+  background-color: white;
+  color: #4a90e2;
+  padding: 6px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn-logout:hover {
+  background-color: #f0f0f0;
+}
+
+/* Main container */
+.tasks-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Summary cards */
+.summary-cards {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.summary-card h3 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.summary-card p {
+  color: #888;
+  font-size: 13px;
+}
+
+.summary-card.total h3 { color: #4a90e2; }
+.summary-card.pending h3 { color: #e67e22; }
+.summary-card.completed h3 { color: #27ae60; }
+
+/* Messages */
+.error-msg {
+  background-color: #ffe0e0;
+  color: #d63031;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.loading-msg, .empty-msg {
+  text-align: center;
+  color: #888;
+  padding: 40px;
+  font-size: 15px;
+}
+
+/* Tasks list */
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
